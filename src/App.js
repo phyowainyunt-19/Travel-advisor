@@ -27,7 +27,7 @@ const App = () => {
   const [type, setType] = useState('restaurants');
   const [rating, setRating] = useState('');
 
-  // const [autocomplete, setAutocomplete] = useState(null);
+  const [autocomplete, setAutocomplete] = useState(null);
 
 
   //for coors of user location
@@ -76,10 +76,12 @@ const App = () => {
   // const onLoad = (autoC) => setAutocomplete(autoC);
 
   // const onPlaceChanged = () => {
-  //   const lat = autocomplete.getPlace().geometry.location.lat();
-  //   const lng = autocomplete.getPlace().geometry.location.lng();
 
-  //   setCoordinates({ lat, lng });
+  //   console.log(autocomplete.getPlace());
+  // const lat = autocomplete.getPlace().geometry.location.lat();
+  // const lng = autocomplete.getPlace().geometry.location.lng();
+
+  // setCoordinates({ lat, lng });
   // };
 
   return (

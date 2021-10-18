@@ -1,7 +1,7 @@
 import React from 'react';
-// import { Autocomplete } from '@react-google-maps/api';
+import { Autocomplete } from '@react-google-maps/api';
 import { AppBar, Toolbar, Typography, InputBase, Box } from '@material-ui/core';
-// import SearchIcon from '@material-ui/icons/Search';
+import SearchIcon from '@material-ui/icons/Search';
 import useStyles from './styles';
 
 const Header = ({ onLoad, onPlaceChanged }) => {
@@ -16,9 +16,9 @@ const Header = ({ onLoad, onPlaceChanged }) => {
 
     return (
         <AppBar position="static">
-            <Toolbar className={classes.toolbar} style={{backgroundColor: 'grey'}}>
+            <Toolbar className={classes.toolbar} style={{ backgroundColor: 'grey' }}>
                 <Typography variant="h5" className={classes.title}>
-                    Let's Explore 
+                    Let's Explore
                 </Typography>
                 {/* simply a div where you can set flex and other properties */}
                 {/* <Box display="flex">
